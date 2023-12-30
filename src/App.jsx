@@ -1,17 +1,23 @@
-import About from "./component/About";
+import Pricing from "./component/Pricing";
 import Hero from "./component/Hero";
 import NavBar from "./component/NavBar";
 import Project from "./component/Project";
-import Skills from "./component/Skills";
+import Services from "./component/Services";
+import Footer from "./component/Footer";
+import SideBar from "./component/SideBar";
+import { useState } from "react";
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(true);
   return (
     <>
-      <NavBar />
+      <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
+      <SideBar isOpen={isOpen} setIsOpen={setIsOpen} />
       <Hero />
-      <Skills />
-      <About />
+      <Services />
+      <Pricing />
       <Project />
+      <Footer />
     </>
   );
 };
