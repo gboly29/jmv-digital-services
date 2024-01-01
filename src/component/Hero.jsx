@@ -5,14 +5,12 @@ const Hero = () => {
   return (
     <div className="py-24 bg-blue-300">
       <div className="align-element py-8 bg-blue-300 grid md:grid-cols-2 sm:grid-cols-1 items-center gap-8">
-        <article>
-          <h1 className="text-7xl font-bold text-blue-600 tracking-wider sm:text-4xl sm:max-w-md">
+        <article className="bg-blue-300">
+          <h1 className="text-5xl font-bold text-blue-600 tracking-wider sm:text-2xl">
             <span className="pr-2">JMV</span>
-            <span className="text-orange-400 sm:text-4xl">
-              Digital-Services
-            </span>
+            <span className="text-orange-400">Digital-Services</span>
           </h1>
-          <p className="mt-4 text-3xl text-slate-700 capitalize tracking-wide sm:text-1xl sm:max-w-md">
+          <p className="mt-4 sm:text-1xl sm:max-w-xs text-slate-700 capitalize tracking-wide">
             Experience lightning-fast, reliable internet services that
             seamlessly connect you to the digital world.
           </p>
